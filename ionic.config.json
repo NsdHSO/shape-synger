@@ -1,0 +1,7 @@
+{
+  "name": "shape-synger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
