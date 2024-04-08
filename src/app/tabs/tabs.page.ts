@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RoutingSateService} from "../shared/services/routing-sate.service";
 
 @Component({
   selector: 'app-tabs',
@@ -9,4 +10,5 @@ export class TabsPage {
 
   constructor() {}
 
+  protected readonly RoutingSateService = RoutingSateService;
 }

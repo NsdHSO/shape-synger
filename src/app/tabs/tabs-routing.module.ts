@@ -1,34 +1,27 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {TabsPage} from './tabs.page';
+import {RoutingSateService} from "../shared/services/routing-sate.service";
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: RoutingSateService.paths.tabs,
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
-      },
-      {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: RoutingSateService.paths.overview,
+        loadChildren: () => import('../modules/overview/overview.module').then(m => m.OverviewModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: `${RoutingSateService.paths.overview}`,
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: `${RoutingSateService.paths.tabs}`,
     pathMatch: 'full'
   }
 ];
@@ -36,4 +29,5 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule {
+}
