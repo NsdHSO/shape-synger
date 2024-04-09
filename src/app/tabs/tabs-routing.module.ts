@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {TabsPage} from './tabs.page';
-import {RoutingSateService} from "../shared/services/routing-sate.service";
+import {RoutingSateService} from "../shared/services/routing/routing-sate.service";
 
 const routes: Routes = [
   {

@@ -1,0 +1,9 @@
+<div class="header-overview-container" #container>
+  <div>
+    <ion-text> {{'TITLE'| translate}}</ion-text>
+    @if (container.offsetWidth< 500){
+      <ion-icon name="apps-outline"></ion-icon>
+    }
+  </div>
+  <ion-toggle (ionChange)="languageChange()" >{{languageComputed()}}</ion-toggle>
+</div>
