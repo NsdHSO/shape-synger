@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {TabsPage} from './tabs.page';
-import {RoutingSateService} from "../shared/services/routing/routing-sate.service";
+import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from "@angular/router";
+import {TabsPage} from "./tabs.page";
+import {RoutingSateService} from "../shared/services";
 
 const routes: Routes = [
   {
@@ -10,19 +10,19 @@ const routes: Routes = [
     children: [
       {
         path: RoutingSateService.paths.overview,
-        loadChildren: () => import('../modules/overview/overview.module').then(m => m.OverviewModule)
+        loadChildren: () => import("../modules/overview/overview.module").then(m => m.OverviewModule)
       },
       {
-        path: '',
+        path: "",
         redirectTo: `${RoutingSateService.paths.overview}`,
-        pathMatch: 'full'
+        pathMatch: "full"
       }
     ]
   },
   {
-    path: '',
+    path: "",
     redirectTo: `${RoutingSateService.paths.tabs}`,
-    pathMatch: 'full'
+    pathMatch: "full"
   }
 ];
 
