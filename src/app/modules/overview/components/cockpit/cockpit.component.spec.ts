@@ -9,8 +9,8 @@ describe('CockpitComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CockpitComponent ],
-      imports: [IonicModule.forRoot()]
+      declarations: [CockpitComponent],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CockpitComponent);

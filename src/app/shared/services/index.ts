@@ -1,1 +1,1 @@
-export * from './routing/routing-sate.service'
+export * from './routing/routing-sate.service';

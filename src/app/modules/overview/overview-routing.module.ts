@@ -1,6 +1,6 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {OverviewComponent} from "./overview.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { OverviewComponent } from './overview.component';
 
 const routes: Routes = [
   {
@@ -10,12 +10,11 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class OverviewRoutingModule {
-}
+export class OverviewRoutingModule {}

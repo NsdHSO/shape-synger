@@ -1,14 +1,14 @@
-import {NgModule} from "@angular/core";
-import {BrowserModule} from "@angular/platform-browser";
-import {RouteReuseStrategy} from "@angular/router";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
 
-import {IonicModule, IonicRouteStrategy} from "@ionic/angular";
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
-import {AppRoutingModule} from "./app-routing.module";
-import {AppComponent} from "./app.component";
-import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -26,12 +26,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        deps: [HttpClient],
       },
-      defaultLanguage: "ro-RO"
-    })
+      defaultLanguage: 'ro-RO',
+    }),
   ],
-  providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
 })
-export class AppModule {
-}
+export class AppModule {}

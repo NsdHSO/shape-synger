@@ -1,9 +1,11 @@
 <div class="header-overview-container px-2" #container>
   <div class="flex justify-center items-center gap-x-2">
-    <ion-text> {{'TITLE'| translate}}</ion-text>
-    @if (container.offsetWidth< 500){
+    <ion-text> {{ "TITLE" | translate }}</ion-text>
+    @if (container.offsetWidth < 500) {
       <ion-icon name="apps-outline"></ion-icon>
     }
   </div>
-  <ion-toggle (ionChange)="languageChange()" >{{languageComputed()}}</ion-toggle>
+  <ion-toggle (ionChange)="languageChange()">{{
+    languageComputed()
+  }}</ion-toggle>
 </div>

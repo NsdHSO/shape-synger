@@ -1,15 +1,13 @@
-import {Injectable} from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root',
 })
 export class RoutingSateService {
-
   static paths = {
-    overview: "overview",
-    tabs: "tabs"
+    overview: 'overview',
+    tabs: 'tabs',
   };
 
-  constructor() {
-  }
+  constructor() {}
 }
