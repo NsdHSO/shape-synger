@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { HeaderOverviewComponent } from './header-overview.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
+import { HeaderOverviewComponent } from './header-overview.component';
 
 describe('HeaderOverviewComponent', () => {
   let component: HeaderOverviewComponent;
