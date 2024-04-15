@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RoutingSateService } from '../shared/services/routing/routing-sate.service';
+import { RoutingSateService } from '../core/routing/routing-sate.service';
 
 @Component({
   selector: 'app-tabs',

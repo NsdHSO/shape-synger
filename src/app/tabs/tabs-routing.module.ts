@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-import { RoutingSateService } from '../shared/services';
+import { RoutingSateService } from '../core';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
       {
         path: RoutingSateService.paths.overview,
         loadChildren: () =>
-          import('../modules/overview/overview.module').then(
+          import('../feature/overview/overview.module').then(
             (m) => m.OverviewModule,
           ),
       },
