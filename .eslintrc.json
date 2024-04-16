@@ -30,14 +30,8 @@
         "no-console": "error",
         "no-debugger": "error",
         "array-bracket-newline": "error",
-        "comma-dangle": ["error", {
-          "arrays": "only-multiline",
-          "objects": "only-multiline",
-          "imports": "never",
-          "exports": "never",
-          "functions": "never"
-        }],        "import/order": [
-           "error",
+        "import/order": [
+          "error",
           {
             "newlines-between": "always-and-inside-groups",
             "groups": [
@@ -219,6 +213,12 @@
                     {
                       "app": "${from.app}"
                     }
+                  ],
+                  [
+                    "tabs"
+                  ],
+                  [
+                    "core"
                   ]
                 ]
               },

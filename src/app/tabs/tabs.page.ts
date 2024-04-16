@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
 
 import { RoutingSateService } from '../core/routing/routing-sate.service';
 
@@ -8,7 +10,6 @@ import { RoutingSateService } from '../core/routing/routing-sate.service';
   styleUrls: ['tabs.page.scss'],
 })
 export class TabsPage {
-  constructor() {}
-
+  protected readonly activatedRoute = inject(ActivatedRoute);
   protected readonly RoutingSateService = RoutingSateService;
 }
