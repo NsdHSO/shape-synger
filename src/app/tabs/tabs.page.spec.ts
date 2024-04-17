@@ -5,7 +5,6 @@ import { ActivatedRoute } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
 import { CoreService } from '../core/core.service';
-import { NakedPipe } from '../core/pipes/naked.pipe';
 
 describe('TabsPage', () => {
   describe('Init Value', () => {
@@ -59,7 +58,6 @@ describe('TabsPage', () => {
 
     beforeEach(async () => {
       await TestBed.configureTestingModule({
-        imports: [NakedPipe],
         declarations: [TabsPage],
         schemas: [CUSTOM_ELEMENTS_SCHEMA],
         providers: [
@@ -71,12 +69,6 @@ describe('TabsPage', () => {
                   routes: [{}, {}],
                 },
               },
-            },
-          },
-          {
-            provide: CoreService,
-            useValue: {
-              baseApp: signal('ion'),
             },
           },
         ],

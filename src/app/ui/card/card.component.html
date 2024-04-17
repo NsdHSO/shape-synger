@@ -1,0 +1,44 @@
+<ion-card>
+  <ion-card-header>
+    <div class="flex justify-between items-center flex-row">
+      @if (title) {
+        <div class="flex gap-x-4">
+          <ion-card-title [attr.data-test]="'card_head_title' | naked"
+            >{{ title }}
+          </ion-card-title>
+          @if (superScript) {
+            <li
+              class="list-outside"
+              [attr.data-test]="'card_head_super_script' | naked"
+            >
+              <ion-text>{{ superScript }}</ion-text>
+            </li>
+          }
+        </div>
+      } @else {
+        <div class="flex" [ngStyle]="{ width: '100%', height: '2rem' }">
+          <ion-progress-bar
+            [attr.data-test]="'card_head_progress_bar' | naked"
+            type="indeterminate"
+          />
+          <ion-progress-bar
+            [attr.data-test]="'card_head_progress_bar' | naked"
+            type="indeterminate"
+          />
+        </div>
+      }
+      @if (logo) {
+        <ion-icon
+          [attr.data-test]="'card_head_icon' | naked"
+          size="large"
+          [name]="logo"
+        />
+      }
+    </div>
+    @if (subTitle) {
+      <ion-card-subtitle>{{ subTitle }}</ion-card-subtitle>
+    }
+  </ion-card-header>
+
+  <div></div>
+</ion-card>

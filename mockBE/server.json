@@ -5,31 +5,31 @@
       "cards": [
         {
           "title": "Operation Major Group 10 Overview",
-          "icon": "operations",
+          "icon": "clipboard-outline",
           "color": "green",
           "badgeCount": 2
         },
         {
           "title": "Task Allocation Matrix",
-          "icon": "matrix",
+          "icon": "analytics-outline",
           "color": "purple",
           "badgeCount": 3
         },
         {
           "title": "Timeline and Milestones",
-          "icon": "calendar",
+          "icon": "calendar-number-outline",
           "color": "orange",
           "badgeCount": 2
         },
         {
           "title": "Resource Management Plan",
-          "icon": "resources",
+          "icon": "leaf-outline",
           "color": "yellow",
           "badgeCount": 4
         },
         {
           "title": "Risk Management Framework",
-          "icon": "shield",
+          "icon": "shield-outline",
           "color": "red",
           "badgeCount": 3
         }
@@ -40,19 +40,19 @@
       "cards": [
         {
           "title": "Employee Training Program",
-          "icon": "training",
-          "color": "blue",
+          "color": "red",
+          "icon": "trail-sign-outline",
           "badgeCount": 0
         },
         {
           "title": "Employee Recognition Program",
-          "icon": "recognition",
+          "icon": "receipt-outline",
           "color": "purple",
           "badgeCount": 2
         },
         {
           "title": "Employee Wellness Program",
-          "icon": "wellness",
+          "icon": "hourglass-outline",
           "color": "orange",
           "badgeCount": 4
         }
