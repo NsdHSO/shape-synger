@@ -1,5 +1,5 @@
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
-
+// eslint-disable-next-line boundaries/no-unknown-files
 import 'zone.js/testing';
 import { getTestBed, TestBed } from '@angular/core/testing';
 import {
