@@ -1,0 +1,79 @@
+{
+  "overview": [
+    {
+      "title": "Operations",
+      "cards": [
+        {
+          "title": "Operation Major Group 10 Overview",
+          "icon": "operations",
+          "color": "green",
+          "badgeCount": 2
+        },
+        {
+          "title": "Task Allocation Matrix",
+          "icon": "matrix",
+          "color": "purple",
+          "badgeCount": 3
+        },
+        {
+          "title": "Timeline and Milestones",
+          "icon": "calendar",
+          "color": "orange",
+          "badgeCount": 2
+        },
+        {
+          "title": "Resource Management Plan",
+          "icon": "resources",
+          "color": "yellow",
+          "badgeCount": 4
+        },
+        {
+          "title": "Risk Management Framework",
+          "icon": "shield",
+          "color": "red",
+          "badgeCount": 3
+        }
+      ]
+    },
+    {
+      "title": "Employee",
+      "cards": [
+        {
+          "title": "Employee Training Program",
+          "icon": "training",
+          "color": "blue",
+          "badgeCount": 0
+        },
+        {
+          "title": "Employee Recognition Program",
+          "icon": "recognition",
+          "color": "purple",
+          "badgeCount": 2
+        },
+        {
+          "title": "Employee Wellness Program",
+          "icon": "wellness",
+          "color": "orange",
+          "badgeCount": 4
+        }
+      ]
+    },
+    {
+      "title": "Business",
+      "cards": [
+        {
+          "title": "Business Expansion Strategy",
+          "icon": "growth",
+          "color": "green",
+          "badgeCount": 5
+        },
+        {
+          "title": "Process Optimization Initiative",
+          "icon": "optimization",
+          "color": "yellow",
+          "badgeCount": 0
+        }
+      ]
+    }
+  ]
+}
