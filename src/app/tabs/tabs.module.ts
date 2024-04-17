@@ -9,7 +9,6 @@ import { TabsPage } from './tabs.page';
 import {NakedPipe} from "../core/pipes/naked.pipe";
 
 @NgModule({
-    imports: [IonicModule, CommonModule, FormsModule, TabsPageRoutingModule, NakedPipe],
-  declarations: [TabsPage],
+    imports: [IonicModule, CommonModule, FormsModule, TabsPageRoutingModule, NakedPipe, TabsPage],
 })
 export class TabsPageModule {}
