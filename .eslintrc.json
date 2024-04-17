@@ -29,7 +29,6 @@
         ],
         "no-console": "error",
         "no-debugger": "error",
-        "array-bracket-newline": "error",
         "import/order": [
           "error",
           {
