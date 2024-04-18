@@ -3,14 +3,15 @@ import { IonicModule } from '@ionic/angular';
 
 // eslint-disable-next-line boundaries/element-types
 import { NakedPipe } from '../../core/pipes/naked.pipe';
-import { NgStyle } from '@angular/common';
+import { BorderColoredDirective } from '../directive/border-colored.directive';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
   standalone: true,
-  imports: [IonicModule, NakedPipe, NgStyle],
+  imports: [IonicModule, NakedPipe],
+  hostDirectives: [{ directive: BorderColoredDirective, inputs: ['color'] }],
 })
 export class CardComponent {
   /**

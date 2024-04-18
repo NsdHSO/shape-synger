@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  apiOverViewUrl: 'http://localhost:3000/overview',
 };
 
 /*

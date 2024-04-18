@@ -4,14 +4,16 @@ import { HeaderOverviewComponent } from './ui/header-overview/header-overview.co
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-    selector: 'app-overview',
-    templateUrl: './overview.component.html',
-    styleUrls: ['./overview.component.scss'],
-    standalone: true,
-    imports: [
-        IonicModule,
-        HeaderOverviewComponent,
-        CockpitComponent,
-    ],
+  selector: 'app-overview',
+  templateUrl: './overview.component.html',
+  styleUrls: ['./overview.component.scss'],
+  standalone: true,
+  imports: [
+    IonicModule,
+    HeaderOverviewComponent,
+    CockpitComponent,
+  ],
 })
-export class OverviewComponent {}
+export class OverviewComponent {
+  //Cot
+}
