@@ -1,7 +1,9 @@
 import { InjectionToken, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OverviewComponent } from './overview.component';
+
 import { IonicModule } from '@ionic/angular';
+
+import { OverviewComponent } from './overview.component';
 import { HeaderOverviewComponent } from './ui/header-overview/header-overview.component';
 import { CockpitComponent } from './ui/cockpit/cockpit.component';
 import { OverviewRoutingModule } from './overview-routing.module';
@@ -18,14 +20,15 @@ export const API_URL = new InjectionToken('ENV');
     IonicModule,
     HeaderOverviewComponent,
     CardComponent,
-    OverviewComponent, CockpitComponent,
+    OverviewComponent,
+    CockpitComponent,
   ],
   providers: [
     OverviewApiService,
     {
-      provide: API_URL, useValue: environment.apiOverViewUrl
-    }
-  ]
+      provide: API_URL,
+      useValue: environment.apiOverViewUrl,
+    },
+  ],
 })
-export class OverviewModule {
-}
+export class OverviewModule {}

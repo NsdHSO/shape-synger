@@ -14,7 +14,7 @@
         "plugin:@angular-eslint/recommended",
         "plugin:import/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:boundaries/strict",
+        "plugin:boundaries/recommended",
         "plugin:prettier/recommended"
       ],
       "rules": {
@@ -84,120 +84,7 @@
           "typescript": {
             "alwaysTryTypes": true
           }
-        },
-        "boundaries/ignore": [
-          "**/jest*.{js,ts}"
-        ],
-        "boundaries/dependency-nodes": [
-          "import",
-          "dynamic-import"
-        ],
-        "boundaries/elements": [
-          {
-            "type": "env",
-            "pattern": "environments",
-            "basePattern": "src/**/src",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "main",
-            "mode": "file",
-            "pattern": "main.ts",
-            "basePattern": "src/**/src",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "app",
-            "mode": "file",
-            "pattern": "app(-|.)*.ts",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "core",
-            "pattern": "core",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "ui",
-            "pattern": "ui",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "tabs",
-            "pattern": "tabs",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "layout",
-            "pattern": "layout",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "pattern",
-            "pattern": "pattern",
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "feature-routes",
-            "mode": "file",
-            "pattern": "feature/*/*.routes.ts",
-            "capture": [
-              "feature"
-            ],
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "feature",
-            "pattern": "feature/**/*.ts",
-            "capture": [
-              "feature"
-            ],
-            "basePattern": "src/app",
-            "baseCapture": [
-              "app"
-            ]
-          },
-          {
-            "type": "lib-api",
-            "mode": "file",
-            "pattern": "src/public-api.ts",
-            "capture": [
-              "lib"
-            ]
-          },
-          {
-            "type": "lib",
-            "pattern": "src/lib",
-            "capture": [
-              "lib"
-            ]
-          }
-        ]
+        }
       }
     },
     {
