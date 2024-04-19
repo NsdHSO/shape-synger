@@ -15,5 +15,3 @@ import { provideCore } from './core/provider';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
-
-

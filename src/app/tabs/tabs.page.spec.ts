@@ -13,27 +13,27 @@ describe('TabsPage', () => {
 
     beforeEach(async () => {
       await TestBed.configureTestingModule({
-    imports: [TabsPage],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    providers: [
-        {
+        imports: [TabsPage],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        providers: [
+          {
             provide: ActivatedRoute,
             useValue: {
-                snapshot: {
-                    data: {
-                        routes: [],
-                    },
+              snapshot: {
+                data: {
+                  routes: [],
                 },
+              },
             },
-        },
-        {
+          },
+          {
             provide: CoreService,
             useValue: {
-                baseApp: signal('ion'),
+              baseApp: signal('ion'),
             },
-        },
-    ],
-}).compileComponents();
+          },
+        ],
+      }).compileComponents();
     });
 
     beforeEach(() => {
@@ -58,21 +58,21 @@ describe('TabsPage', () => {
 
     beforeEach(async () => {
       await TestBed.configureTestingModule({
-    imports: [TabsPage],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    providers: [
-        {
+        imports: [TabsPage],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        providers: [
+          {
             provide: ActivatedRoute,
             useValue: {
-                snapshot: {
-                    data: {
-                        routes: [{}, {}],
-                    },
+              snapshot: {
+                data: {
+                  routes: [{}, {}],
                 },
+              },
             },
-        },
-    ],
-}).compileComponents();
+          },
+        ],
+      }).compileComponents();
     });
 
     beforeEach(() => {

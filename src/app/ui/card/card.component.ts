@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 // eslint-disable-next-line boundaries/element-types
+import { TranslateModule } from '@ngx-translate/core';
+
 import { NakedPipe } from '../../core/pipes/naked.pipe';
 import { BorderColoredDirective } from '../directive/border-colored.directive';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-card',

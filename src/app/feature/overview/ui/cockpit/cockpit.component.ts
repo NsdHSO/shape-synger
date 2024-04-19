@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 
 import { IonicModule } from '@ionic/angular';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 import { CardComponent } from '../../../../ui/card/card.component';
 import { Card } from '../../type/overview.type';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-cockpit',
