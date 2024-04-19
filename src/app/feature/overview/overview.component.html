@@ -5,6 +5,7 @@
 </ion-header>
 <ion-content class="ion-padding">
   <ion-col>
-    <app-cockpit />
+    <app-cockpit [cards]="supabaseService.snapshot.data['cards']" />
   </ion-col>
 </ion-content>
+

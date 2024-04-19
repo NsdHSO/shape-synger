@@ -1,6 +1,7 @@
 export interface Card {
   title: string;
   superScript: string;
-  logo: string;
+  icon: string;
   subTitle: string;
+  color: string;
 }

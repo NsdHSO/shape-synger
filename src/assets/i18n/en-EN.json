@@ -1,4 +1,18 @@
 {
   "APP_NAME": "shape-synger",
-  "TITLE": "Economy"
+  "TITLE": "Economy",
+  "OVERVIEW_EMPLOYEE_TRAINING_PROGRAM": "Employee Training Program",
+  "OVERVIEW_EMPLOYEE_RECOGNITION_PROGRAM": "Employee Recognition Program",
+  "OVERVIEW_EMPLOYEE_WELLNESS_PROGRAM": "Employee Wellness Program",
+  "OVERVIEW_BUSINESS_EXPANSION_STRATEGY": "Business Expansion Strategy",
+  "OVERVIEW_PROCESS_OPTIMIZATION_INITIATIVE": "Process Optimization Initiative",
+  "OVERVIEW_OPERATION_MAJOR_GROUP_10_OVERVIEW": "Operation Major Group 10 Overview",
+  "OVERVIEW_TASK_ALLOCATION_MATRIX": "Task Allocation Matrix",
+  "OVERVIEW_TIMELINE_AND_MILESTONES": "Timeline And Milestones",
+  "OVERVIEW_RESOURCE_MANAGEMENT_PLAN": "Resource Management Plan",
+  "OVERVIEW_RISK_MANAGEMENT_FRAMEWORK": "Risk Management Framework",
+  "OVERVIEW_EMPLOYEE": "Employee",
+  "OVERVIEW_BUSINESS": "Business",
+  "OVERVIEW_OPERATIONS": "Operations"
 }
+

@@ -1,2 +1,12 @@
-<app-card [logo]="'clipboard-outline'" [title]="'Iaun'" color="--ion-color-danger-tint" />
-<app-card [logo]="'clipboard-outline'" [title]="'Iaun'" color="--ion-color-warning-shade" />
+@for (category of cards; let index = $index; track index) {
+  <div>
+    <div class="py-2">
+      <ion-text>
+        {{ category.title | translate }}
+      </ion-text>
+    </div>
+    @for (card of category.cards; let index = $index; track index) {
+      <app-card [logo]="card.icon" [title]="card.title" [color]="card.color" />
+    }
+  </div>
+}

@@ -1,4 +1,17 @@
 {
   "APP_NAME": "shape-synger",
-  "TITLE": "ShcccapeE"
+  "TITLE": "ShcccapeE",
+  "OVERVIEW_EMPLOYEE_TRAINING_PROGRAM": "Program de formare a angajaților",
+  "OVERVIEW_EMPLOYEE_RECOGNITION_PROGRAM": "Program de recunoaștere a angajaților",
+  "OVERVIEW_EMPLOYEE_WELLNESS_PROGRAM": "Programul de bunăstare a angajaților",
+  "OVERVIEW_BUSINESS_EXPANSION_STRATEGY": "Strategia de extindere a afacerii",
+  "OVERVIEW_PROCESS_OPTIMIZATION_INITIATIVE": "Inițiativa de optimizare a procesului",
+  "OVERVIEW_OPERATION_MAJOR_GROUP_10_OVERVIEW": "Prezentare generală a operațiunii Grupul major 10",
+  "OVERVIEW_TASK_ALLOCATION_MATRIX": "Matricea de alocare a sarcinilor",
+  "OVERVIEW_TIMELINE_AND_MILESTONES": "Cronologie și etape",
+  "OVERVIEW_RESOURCE_MANAGEMENT_PLAN": "Plan de gestionare a resurselor",
+  "OVERVIEW_RISK_MANAGEMENT_FRAMEWORK": "Cadru de management al riscului",
+  "OVERVIEW_EMPLOYEE": "Angajat",
+  "OVERVIEW_BUSINESS": "Angajator",
+  "OVERVIEW_OPERATIONS": "Operator"
 }

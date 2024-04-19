@@ -4,14 +4,14 @@
       @if (title) {
         <div class="flex gap-x-4 col-span-10">
           <ion-card-title [attr.data-test]="'card_head_title' | naked"
-          >{{ title }}
+            >{{ title | translate }}
           </ion-card-title>
           @if (superScript) {
             <li
               class="list-outside"
               [attr.data-test]="'card_head_super_script' | naked"
             >
-              <ion-text>{{ superScript }}</ion-text>
+              <ion-text>{{ superScript | translate }}</ion-text>
             </li>
           }
         </div>
@@ -38,7 +38,7 @@
       }
     </div>
     @if (subTitle) {
-      <ion-card-subtitle>{{ subTitle }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ subTitle | translate }}</ion-card-subtitle>
     }
   </ion-card-header>
 </ion-card>
