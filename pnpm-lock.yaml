@@ -52,9 +52,6 @@ dependencies:
   '@ngx-translate/http-loader':
     specifier: ^8.0.0
     version: 8.0.0(@angular/common@17.3.4)(@angular/core@17.3.4)(@ngx-translate/core@15.0.0)(rxjs@7.8.0)
-  '@supabase/auth-js':
-    specifier: ^2.62.2
-    version: 2.62.2
   '@supabase/supabase-js':
     specifier: ^2.42.5
     version: 2.42.5
@@ -3259,12 +3256,6 @@ packages:
     resolution: {integrity: sha512-gXaC5IrquV/Hw5JIZTCWkM5lJEbBQtnvHLhDebjar6A6+YBqxah04dardS+YUNVuRbnE6Hcja7KKiAXT3oVsvw==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
-    dev: false
-
-  /@supabase/auth-js@2.62.2:
-    resolution: {integrity: sha512-sFjDwzbTGiJK2gaP2HUgVkNmruvtLPBLR+m79cjaihqvq9gl6wBSYce7Ld0AqteQsXiWp/LK7iyrWSuhE4mPUw==}
-    dependencies:
-      '@supabase/node-fetch': 2.6.15
     dev: false
 
   /@supabase/auth-js@2.63.1:
