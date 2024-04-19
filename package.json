@@ -30,6 +30,7 @@
     "@ionic/angular": "^7.0.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "@supabase/auth-js": "^2.62.2",
     "@supabase/supabase-js": "^2.42.5",
     "eslint-plugin-boundaries": "^4.2.0",
     "ionicons": "^7.0.0",
