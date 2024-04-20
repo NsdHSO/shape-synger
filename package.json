@@ -6,8 +6,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "config-ts": "ts-node set-env.ts",
-    "build": "BUILD_ENV=${BUILD_ENV:-local} ng build --configuration=$BUILD_ENV",
+    "config": "ts-node set-env.ts",
+    "build": "npm run config && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
@@ -35,6 +35,7 @@
     "eslint-plugin-boundaries": "^4.2.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
+    "ts-node": "^10.9.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
