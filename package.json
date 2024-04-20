@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "BUILD_ENV=${BUILD_ENV:-local} ng build --configuration=$BUILD_ENV",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
