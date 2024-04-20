@@ -9,7 +9,7 @@ export const environment = {
 
 // Generate environment.ts file
 fs.writeFile(
-  './src/environments/environment.ts',
+  './src/environments/environment.prod.ts',
   environment,
   function (err: any) {
     if (err) {
