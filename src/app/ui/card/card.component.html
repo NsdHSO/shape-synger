@@ -1,4 +1,4 @@
-<ion-card>
+<ion-card (click)="cardClick.emit()" [attr.data-test]="'card' | naked">
   <ion-card-header>
     <div class="grid grid-cols-12 grid-flow-col">
       @if (title) {

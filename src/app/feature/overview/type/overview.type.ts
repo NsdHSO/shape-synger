@@ -4,4 +4,5 @@ export interface Card {
   icon: string;
   subTitle: string;
   color: string;
+  id: number;
 }

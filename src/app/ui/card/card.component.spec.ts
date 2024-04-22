@@ -50,5 +50,14 @@ describe('CardComponent', () => {
       expect(progressBar).toBeTruthy();
       expect(progressBar.length).toEqual(2);
     });
+
+    it('should have called the emit method', () => {
+      const elementCard = fixture.nativeElement.querySelector(
+        '[data-test="ion_card"]',
+      );
+      const emitSpy = spyOn(component.cardClick, 'emit');
+      elementCard.click(); // simulate a click event
+      expect(emitSpy).toHaveBeenCalledTimes(1);
+    });
   });
 });
