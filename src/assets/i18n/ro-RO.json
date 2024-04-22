@@ -13,5 +13,8 @@
   "OVERVIEW_RISK_MANAGEMENT_FRAMEWORK": "Cadru de management al riscului",
   "OVERVIEW_EMPLOYEE": "Angajat",
   "OVERVIEW_BUSINESS": "Angajator",
-  "OVERVIEW_OPERATIONS": "Operator"
+  "OVERVIEW_OPERATIONS": "Operator",
+  "ERRORS": {
+    "NOT_FOUND": "Aceasta functionalitate nu a fost dezvoltate"
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 // eslint-disable-next-line boundaries/element-types
@@ -42,5 +42,6 @@ export class CardComponent {
   /**
    * Card emitter What is triggered on the wrapper of the card
    */
-  public cardClick = new EventEmitter();
+  @Output()
+  cardClick = new EventEmitter();
 }

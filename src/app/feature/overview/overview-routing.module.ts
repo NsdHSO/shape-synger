@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { OverviewComponent } from './overview.component';
 import { OverviewApiService } from './services/api/overview-api.service';
+import { RoutingSateService } from '../../core';
 
 const routes: Routes = [
   {
@@ -11,6 +12,11 @@ const routes: Routes = [
     resolve: {
       cards: () => inject(OverviewApiService).getCards,
     },
+  },
+  {
+    path: RoutingSateService.paths.traning,
+    loadComponent: () =>
+      import('./ui/traning/traning.component').then((c) => c.TraningComponent),
   },
   {
     path: '',
@@ -22,4 +28,5 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class OverviewRoutingModule {}
+export class OverviewRoutingModule {
+}

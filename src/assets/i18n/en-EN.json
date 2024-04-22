@@ -13,6 +13,10 @@
   "OVERVIEW_RISK_MANAGEMENT_FRAMEWORK": "Risk Management Framework",
   "OVERVIEW_EMPLOYEE": "Employee",
   "OVERVIEW_BUSINESS": "Business",
-  "OVERVIEW_OPERATIONS": "Operations"
+  "OVERVIEW_OPERATIONS": "Operations",
+  "ERRORS": {
+    "NOT_FOUND": "This functionality could not be found."
+  }
+
 }
 

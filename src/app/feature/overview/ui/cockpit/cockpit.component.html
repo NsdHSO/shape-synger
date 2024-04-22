@@ -6,7 +6,7 @@
       </ion-text>
     </div>
     @for (card of category.cards; let index = $index; track index) {
-      <app-card [logo]="card.icon" [title]="card.title" [color]="card.color" />
+      <app-card [logo]="card.icon" [title]="card.title" [color]="card.color" (cardClick)="cockpitService.navigateTo(card.componentname)"/>
     }
   </div>
 }
