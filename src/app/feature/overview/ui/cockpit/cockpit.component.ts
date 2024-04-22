@@ -7,13 +7,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CardComponent } from '../../../../ui/card/card.component';
 import { Card } from '../../type/overview.type';
 import { CockpitService } from '../../services/logic/cockpit/cockpit.service';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-cockpit',
   templateUrl: './cockpit.component.html',
   styleUrls: ['./cockpit.component.scss'],
   standalone: true,
-  imports: [CardComponent, IonicModule, TranslateModule],
+  imports: [CardComponent, IonicModule, TranslateModule, NgStyle],
   providers: [CockpitService],
 })
 export class CockpitComponent {

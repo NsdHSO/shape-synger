@@ -1,12 +1,19 @@
 @for (category of cards; let index = $index; track index) {
-  <div>
-    <div class="py-2">
+  <div
+    class="rounded backdrop-blur shadow-xl hover:border-x-cyan-950"
+  >
+    <div class="p-2 scroll-px-3.5">
       <ion-text>
         {{ category.title | translate }}
       </ion-text>
     </div>
     @for (card of category.cards; let index = $index; track index) {
-      <app-card [logo]="card.icon" [title]="card.title" [color]="card.color" (cardClick)="cockpitService.navigateTo(card.componentname)"/>
+      <app-card
+        [logo]="card.icon"
+        [title]="card.title"
+        [color]="card.color"
+        (cardClick)="cockpitService.navigateTo(card.componentname)"
+      />
     }
   </div>
 }

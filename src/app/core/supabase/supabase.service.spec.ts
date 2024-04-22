@@ -57,12 +57,12 @@ describe('SupabaseService', () => {
       ]).length,
     ).toEqual(3);
     expect(
-      service.retrieveAllCardsAndPutIntoNewFormat([
+      (      service.retrieveAllCardsAndPutIntoNewFormat([
         { category: 'Employee' },
         { category: 'Business' },
         { category: 'Business' },
         { category: 'Operations' },
-      ])[1].cards.length,
+      ])[1].cards as any).length
     ).toEqual(2);
   });
 });

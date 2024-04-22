@@ -5,6 +5,8 @@ import {
   SupabaseClient,
 } from '@supabase/supabase-js';
 
+import { car } from 'ionicons/icons';
+
 import { environment } from '../../../environments/environment';
 
 @Injectable({
@@ -38,19 +40,33 @@ export class SupabaseService {
    * @param cards
    */
   retrieveAllCardsAndPutIntoNewFormat(cards: { category: string }[]) {
-    // Filter cards based on title
-    const employeeCards = cards.filter(
-      (card) => card.category.toUpperCase() === 'Employee'.toUpperCase(),
-    );
-    const businessCards = cards.filter(
-      (card) => card.category.toUpperCase() === 'Business'.toUpperCase(),
-    );
-    const operationsCards = cards.filter(
-      (card) => card.category.toUpperCase() === 'Operations'.toUpperCase(),
-    );
+    let employeeCards;
+    let businessCards;
+    let operationsCards;
+    const categories = new Set();
+    cards.forEach((card) => {
+      categories.add(card.category);
+    });
+    categories.forEach((catetegories) => {
+      if (catetegories === 'Employee') {
+        employeeCards = cards.filter(
+          (card) => card.category.toUpperCase() === catetegories.toUpperCase(),
+        );
+      }
+      if (catetegories === 'Business') {
+        businessCards = cards.filter(
+          (card) => card.category.toUpperCase() === catetegories.toUpperCase(),
+        );
+      }
+      if (catetegories === 'Operations') {
+        operationsCards = cards.filter(
+          (card) => card.category.toUpperCase() === catetegories.toUpperCase(),
+        );
+      }
+    });
     // returned only if length is grater than 0
     return [
-      ...(employeeCards.length
+      ...(employeeCards
         ? [
             {
               title: 'OVERVIEW_Employee'.toUpperCase(),
@@ -58,7 +74,7 @@ export class SupabaseService {
             },
           ]
         : []),
-      ...(businessCards.length
+      ...(businessCards
         ? [
             {
               title: 'OVERVIEW_Business'.toUpperCase(),
@@ -66,7 +82,7 @@ export class SupabaseService {
             },
           ]
         : []),
-      ...(operationsCards.length
+      ...(operationsCards
         ? [
             {
               title: 'OVERVIEW_Operations'.toUpperCase(),
