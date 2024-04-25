@@ -35,6 +35,7 @@ export class CockpitService {
         relativeTo: this.activatedRoute,
         animated: true,
         animationDirection: 'back',
+
       })
       .catch(async (error) => {
         if (error.code === 4002) {
