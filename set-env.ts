@@ -15,6 +15,17 @@ fs.writeFile(
     if (err) {
       throw console.error(err);
     } else {
+      console.log(`Angular environment.prod.ts file generated`);
+    }
+  },
+);
+fs.writeFile(
+  './src/environments/environment.ts',
+  environment,
+  function (err: any) {
+    if (err) {
+      throw console.error(err);
+    } else {
       console.log(`Angular environment.ts file generated`);
     }
   },
