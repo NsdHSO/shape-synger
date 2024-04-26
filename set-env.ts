@@ -2,7 +2,7 @@ const fs = require('fs');
 const environment = `
 export const environment = {
   production: true,
-  apiOverViewUrl: 'http://localhost:3000/overview',
+  apiOverViewUrl: \`${process.env['apiOverViewUrl']}\`,
   supabaseUrl: \`${process.env['supabaseUrl']}\`,
   supabaseKey: \`${process.env['supabaseKey']}\`,
 };`;
@@ -19,6 +19,8 @@ fs.writeFile(
     }
   },
 );
+
+
 fs.writeFile(
   './src/environments/environment.ts',
   environment,
