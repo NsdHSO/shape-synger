@@ -5,8 +5,8 @@ const config: CapacitorConfig = {
   appName: 'shape-synger',
   webDir: 'www',
   server: {
-    hostname: 'shape-synger',
-    androidScheme: 'https',
+    hostname: 'localhost:4200',
+    androidScheme: 'http',
   },
 };
 
