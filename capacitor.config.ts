@@ -5,6 +5,7 @@ const config: CapacitorConfig = {
   appName: 'shape-synger',
   webDir: 'www',
   server: {
+    hostname: 'https://shape-synger-back.vercel.app',
     androidScheme: 'https',
   },
 };

@@ -1,7 +1,7 @@
 
 export const environment = {
   production: true,
-  apiOverViewUrl: 'http://localhost:3000/overview',
+  apiOverViewUrl: `undefined`,
   supabaseUrl: `undefined`,
   supabaseKey: `undefined`,
 };
