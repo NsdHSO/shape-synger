@@ -14,7 +14,7 @@ export class OverviewApiService {
 
   private readonly overViewToken = inject(API_URL);
   headers = new Headers({
-    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiaWFuY3V0cnVtcEBnbWFpbC5jb20iLCJpYXQiOjE3MTQ0NjkwNjUsImV4cCI6MTcxNDU1NTQ2NX0.ufZhaDjw5pPv2Yc5rZu6XMhOQ2k7GuSb1C-YWtu7boM`,
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aGlyZFBhcnR5SWQiOiIxMDY3NjY2NDU5MDEwNDU5MzcwODYiLCJwcm92aWRlciI6Imdvb2dsZSIsImlhdCI6MTcxNDg2MDg1NiwiZXhwIjoxNzE0ODY0NDU2fQ.VQcP6yzex2pYXu5zbFVl6SAjsXteM4a0EgKakImCRDs`,
   }) as any;
   getCards = this.httpClient.get(this.overViewToken + '', {
     headers: this.headers,

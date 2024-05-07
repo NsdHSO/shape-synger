@@ -1,0 +1,36 @@
+<ion-row class="flex justify-center items-center h-full">
+  <ion-row class="h-full flex justify-center items-center flex-col w-1/2">
+    <div class="flex flex-col gap-y-4">
+      <div class="flex-col flex gap-y-4">
+        <div class="flex flex-col gap-3">
+          <ion-input
+            label="Email"
+            label-placement="floating"
+            fill="outline"
+            placeholder="trus@gmail.com"
+          ></ion-input>
+          <div>
+            <ion-input
+              label="Password"
+              label-placement="floating"
+              fill="outline"
+              placeholder="*****"
+              type="password"
+            ></ion-input>
+          </div>
+        </div>
+        <div class="flex flex-col w-full">
+          <ion-button>
+            <ion-text>Login</ion-text>
+          </ion-button>
+        </div>
+        <div class="flex justify-center items-center">
+            <ion-button class="w-full" (click)="logInGoogle()">
+              <ion-icon name="logo-google"></ion-icon>
+            </ion-button>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </ion-row>
+</ion-row>

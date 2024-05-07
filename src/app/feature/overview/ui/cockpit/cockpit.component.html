@@ -1,7 +1,5 @@
 @for (category of cards; let index = $index; track index) {
-  <div
-    class="rounded backdrop-blur shadow-xl hover:border-x-cyan-950"
-  >
+  <div class="rounded backdrop-blur shadow-xl hover:border-x-cyan-950">
     <div class="p-2 scroll-px-3.5">
       <ion-text>
         {{ category.title | translate }}
@@ -12,7 +10,7 @@
         [logo]="card.icon"
         [title]="card.title"
         [color]="card.color"
-        (cardClick)="cockpitService.navigateTo(card.componentname)"
+        (cardClick)="cockpitService.navigateTo(card.component)"
       />
     }
   </div>

@@ -22,6 +22,11 @@ const routes: Routes = [
       ],
     },
   },
+  {
+    path: RoutingSateService.paths.login,
+    loadChildren: () =>
+      import('./feature/auth/auth.module').then((m) => m.AuthModule),
+  },
 ];
 
 @NgModule({

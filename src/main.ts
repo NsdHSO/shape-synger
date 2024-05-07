@@ -1,4 +1,8 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import {
+  APP_INITIALIZER,
+  enableProdMode,
+  importProvidersFrom,
+} from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -12,7 +16,7 @@ import {
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 
 import { IonicRouteStrategy, IonicModule } from '@ionic/angular';
-import { RouteReuseStrategy } from '@angular/router';
+import { ActivatedRoute, RouteReuseStrategy } from '@angular/router';
 
 import { provideCore } from './app/core/provider';
 import { AppRoutingModule } from './app/app-routing.module';
