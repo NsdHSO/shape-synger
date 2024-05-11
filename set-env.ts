@@ -5,6 +5,14 @@ export const environment = {
   apiOverViewUrl: \`${process.env['apiOverViewUrl']}\`,
   supabaseUrl: \`${process.env['supabaseUrl']}\`,
   supabaseKey: \`${process.env['supabaseKey']}\`,
+  login:{
+    authLoginUrl:\`${process.env['authLoginUrl']}\`,
+    responseType:\`${process.env['responseType']}\`,
+    loginURL:\`${process.env['loginURL']}\`,
+    redirect_uri:\`${process.env['redirect_uri']}\`,
+    scope:\`${process.env['scope']}\`,
+    client_id:\`${process.env['client_id']}
+      }
 };`;
 
 // Generate environment.ts file
