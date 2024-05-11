@@ -11,7 +11,7 @@ export const environment = {
     loginURL:\`${process.env['loginURL']}\`,
     redirect_uri:\`${process.env['redirect_uri']}\`,
     scope:\`${process.env['scope']}\`,
-    client_id:\`${process.env['client_id']}
+    client_id:\`${process.env['client_id']}\`
       }
 };`;
 
