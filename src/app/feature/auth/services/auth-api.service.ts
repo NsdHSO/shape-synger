@@ -1,10 +1,14 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { map } from 'rxjs';
+import { catchError, map, tap } from 'rxjs';
 import * as uuidv4 from 'uuid';
+
+import { NavController, ToastController } from '@ionic/angular';
 
 import { GOOGLE_PROP } from '../auth.module';
 import { WINDOW } from '../../../app.module';
+import { LocalStorageService } from '../../../core/localStorage/local-storage.service';
+import { keyForAuth } from '../../../core/constants';
 
 @Injectable({
   providedIn: 'root',
@@ -20,6 +24,22 @@ export class AuthApiService {
    */
   private readonly googleToken = inject(GOOGLE_PROP);
 
+  /**
+   * Instance of local storage
+   * @private
+   */
+  private readonly localStorage = inject(LocalStorageService);
+
+  /**
+   * Instance of navigation service
+   * @private
+   */
+  private readonly navigationService = inject(NavController);
+  /**
+   * Instance of toast service
+   * @private
+   */
+  private readonly toastController = inject(ToastController);
   /**
    *
    * @private
@@ -45,6 +65,14 @@ export class AuthApiService {
   }
 
   /**
+   * Set the data into localStorage
+   * @param data
+   */
+  setDataIntoLocalStorage(data: unknown): void {
+    this.localStorage.setItem(keyForAuth, JSON.stringify(data));
+  }
+
+  /**
    *
    * @param id
    * @private
@@ -57,8 +85,23 @@ export class AuthApiService {
 
     this.httpInstance
       .post<{ data: string }>(this.googleToken.loginURL, {}, { headers })
-      .pipe(map((response) => JSON.parse(atob(response.data))))
-      .subscribe((data) => console.log(data.email));
+      .pipe(
+        map((response) => JSON.parse(atob(response.data))),
+        tap((data) => this.setDataIntoLocalStorage(data)),
+        tap(() => {
+          this.navigationService.navigateForward('');
+        }),
+        catchError((err) => {
+          this.toastController.create({
+            message: 'Error Server',
+            duration: 5000,
+            position: 'top',
+            animated: true,
+          });
+          return err;
+        }),
+      )
+      .subscribe();
   }
 
   private getGoogleLoginURL() {

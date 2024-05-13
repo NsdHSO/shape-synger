@@ -3,10 +3,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 import { NakedPipe } from '../core/pipes/naked.pipe';
+import { authInterceptor } from '../core/auth/auth.interceptor';
 
 @NgModule({
   imports: [
@@ -17,5 +20,7 @@ import { NakedPipe } from '../core/pipes/naked.pipe';
     NakedPipe,
     TabsPage,
   ],
+  providers: [provideHttpClient(withInterceptors([authInterceptor]))],
 })
-export class TabsPageModule {}
+export class TabsPageModule {
+}

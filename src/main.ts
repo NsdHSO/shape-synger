@@ -1,28 +1,18 @@
-import {
-  APP_INITIALIZER,
-  enableProdMode,
-  importProvidersFrom,
-} from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { HttpClient, provideHttpClient, withInterceptors, withInterceptorsFromDi, } from '@angular/common/http';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 
-import {
-  withInterceptorsFromDi,
-  provideHttpClient,
-  HttpClient,
-} from '@angular/common/http';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
-
-import { IonicRouteStrategy, IonicModule } from '@ionic/angular';
-import { ActivatedRoute, RouteReuseStrategy } from '@angular/router';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { RouteReuseStrategy } from '@angular/router';
 
 import { provideCore } from './app/core/provider';
 import { AppRoutingModule } from './app/app-routing.module';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 import { HttpLoaderFactory } from './app/app.module';
+import { authInterceptor } from './app/core/auth/auth.interceptor';
 
 if (environment.production) {
   enableProdMode();
