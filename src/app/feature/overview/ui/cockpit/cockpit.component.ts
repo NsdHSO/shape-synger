@@ -4,10 +4,11 @@ import { IonicModule } from '@ionic/angular';
 
 import { TranslateModule } from '@ngx-translate/core';
 
+import { NgStyle } from '@angular/common';
+
 import { CardComponent } from '../../../../ui/card/card.component';
 import { Card } from '../../type/overview.type';
 import { CockpitService } from '../../services/logic/cockpit/cockpit.service';
-import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-cockpit',

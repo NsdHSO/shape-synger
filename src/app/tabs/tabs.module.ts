@@ -22,5 +22,4 @@ import { authInterceptor } from '../core/auth/auth.interceptor';
   ],
   providers: [provideHttpClient(withInterceptors([authInterceptor]))],
 })
-export class TabsPageModule {
-}
+export class TabsPageModule {}

@@ -28,5 +28,4 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class OverviewRoutingModule {
-}
+export class OverviewRoutingModule {}

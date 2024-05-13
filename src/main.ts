@@ -1,7 +1,12 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-import { HttpClient, provideHttpClient, withInterceptors, withInterceptorsFromDi, } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withInterceptors,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';

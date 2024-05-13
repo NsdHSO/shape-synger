@@ -5,5 +5,5 @@ export interface Card {
   subTitle: string;
   color: string;
   id: number | string;
-  component: string
+  component: string;
 }

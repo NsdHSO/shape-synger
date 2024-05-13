@@ -17,7 +17,7 @@ export class RoutingSateService {
     timeLineMilestones: 'timeLineMilestones',
     managementPlan: 'managementPlan',
     managementFramework: 'managementFramework',
-    login: 'login'
+    login: 'login',
   };
 
   constructor() {}

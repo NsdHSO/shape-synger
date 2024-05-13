@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./traning.component.scss'],
   standalone: true,
 })
-export class TraningComponent  implements OnInit {
-
-  constructor() { }
+export class TraningComponent implements OnInit {
+  constructor() {}
 
   ngOnInit() {}
-
 }

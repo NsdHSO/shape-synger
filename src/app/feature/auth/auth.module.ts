@@ -16,7 +16,7 @@ export interface GoogleAuthConfig {
   redirect_uri: string;
   scope: string;
   client_id: string;
-  loginURL:string
+  loginURL: string;
 }
 
 @NgModule({
@@ -30,5 +30,4 @@ export interface GoogleAuthConfig {
     AuthApiService,
   ],
 })
-export class AuthModule {
-}
+export class AuthModule {}

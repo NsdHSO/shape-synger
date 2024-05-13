@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-entry.component.scss'],
   standalone: true,
 })
-export class CardEntryComponent  implements OnInit {
-
-  constructor() { }
+export class CardEntryComponent implements OnInit {
+  constructor() {}
 
   ngOnInit() {}
-
 }
