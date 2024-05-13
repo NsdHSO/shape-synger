@@ -16,15 +16,19 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
    * Instance of Router
    */
   const router = inject(Router);
-  const currentJWT = localStorage.getItem(keyForAuth)['jwt'];
+  try {
+    const currentJWT = localStorage.getItem(keyForAuth)['jwt'];
 
-  if (currentJWT) {
-    req = req.clone({
-      setHeaders: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${currentJWT}`,
-      },
-    });
+    if (currentJWT) {
+      req = req.clone({
+        setHeaders: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${currentJWT}`,
+        },
+      });
+    }
+  } catch (err) {
+    router.navigate(['/login']);
   }
 
   return next(req).pipe(
