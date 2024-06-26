@@ -14,7 +14,7 @@ export class LocalStorageService {
     if (existingItem) {
       localStorage.removeItem(key);
     }
-    localStorage.setItem(key, data);
+    localStorage.setItem(key, btoa(data));
   }
 
   /**
@@ -24,7 +24,7 @@ export class LocalStorageService {
   public getItem(key: string) {
     const existingItem = localStorage.getItem(key);
     if (existingItem) {
-      return JSON.parse(existingItem);
+      return JSON.parse(atob(existingItem));
     } else {
       throw new Error(`Could not find item: ${key}`);
     }
